@@ -1,0 +1,17 @@
+# Compiled C/C++ binaries
+*.exe
+*.o
+*.out
+*.a
+*.so
+*.dll
+
+# Build directories
+build/
+bin/
+obj/
+
+# IDE files
+.vs/
+*.swp
+*.log
