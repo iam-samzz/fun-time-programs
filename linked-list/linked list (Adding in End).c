@@ -9,6 +9,7 @@ typedef struct nodetype
     struct nodetype *next;
 }node;
 
+
 typedef node *list; /*so this is ....type definition for " node* */
 int main() {
     int n;
