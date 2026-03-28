@@ -58,14 +58,12 @@ int main()
                 print(top);
                 break;
             case 5:
-                
+
                 clear(&top);
                 break;
 
         }
-
     }
-    
 }
 
 //push the elements
