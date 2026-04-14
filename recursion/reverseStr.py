@@ -3,7 +3,7 @@ x = "samaran"
 def func(str):
 
     #bsae case.
-    if len(str) == 1:
+    if len(str) <= 1:
         return str
 
     #recursive case..
