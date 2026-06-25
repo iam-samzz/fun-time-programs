@@ -10,6 +10,7 @@
 build/
 bin/
 obj/
+_pycache_/
 
 
 # IDE files
