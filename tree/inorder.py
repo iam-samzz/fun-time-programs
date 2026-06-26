@@ -10,16 +10,16 @@ class Node:
 
 class BinaryTree:
 
-	def inorder(self,start_node):
+	def inorder_f(self,start_node):
 
 		if start_node == None:
 			return
 
-		self.inorder(start_node.left)
+		self.inorder_f(start_node.left)
 
 		print(start_node.data,end=",")
 
-		self.inorder(start_node.right)
+		self.inorder_f(start_node.right)
 
 		return
 
@@ -43,4 +43,4 @@ if __name__ == "__main__":
 
 	t1 = BinaryTree()
 
-	t1.inorder(n1)
+	t1.inorder_f(n1)
