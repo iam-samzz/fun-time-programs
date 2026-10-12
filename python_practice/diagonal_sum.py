@@ -7,6 +7,12 @@ matrix = [
 			[4,6,9,20]
 		]
 
-for row in range(0,len(matrix)):
-	print(matrix[row][row])
+c = len(matrix[0])
+r = len(matrix)
+
+x = 0
+for column in range(0,c):
+	print(matrix[x][column])
+	x += 1
+	
 

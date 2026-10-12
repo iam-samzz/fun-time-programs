@@ -40,7 +40,3 @@ if __name__ == "__main__":
     bt = Tree()
 
     bt.find_parent_node(root,17)
-    
-
-
-        

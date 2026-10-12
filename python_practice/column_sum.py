@@ -6,13 +6,12 @@ matrix = [
 			[7,8,9]]
 
 
-current_sum = 0
-for column in range(0,len(matrix[0])):
-	for row in range(0,len(matrix)):
-		#basically for each column, we are iterating
-		#through each rows
+r = len(matrix)
+c = len(matrix[0])
 
-		current_sum = current_sum + matrix[row][column]
 
-	print(current_sum)
-	current_sum = 0
+for column in range(0,c):
+    s = 0
+    for row in range(0,r):
+        s += matrix[row][column]
+    print(s)
