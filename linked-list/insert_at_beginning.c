@@ -1,50 +1,32 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
-
-typedef struct node
-{
+typedef struct node{
     int data;
-    struct node* next;
+    struct node * next;
 }node;
 
 
-node* insert_element(int n);
+int main(){
 
+    node* head = NULL;
 
-int main()
-{   
-    int n;
-    printf("Enter the number of element:");
-    scanf("%d",&n);
+    for(int i = 0; i< 5; i++){
 
-    
-    printf("\n");
-    printf("inserting...\n");
-
-    node* head_p = insert_element(n);
-    while(head_p != NULL)
-    {
-        printf("%d,",head_p->data);
-        head_p = head_p->next;
-    }
-
-    free(head_p);
-}
-
-node* insert_element(int n)
-{
-    node * head = NULL;
-    node * temp = NULL;
-
-    for(int i=0;i<n;i++)
-    {
-        temp = (node*)malloc(1*sizeof(node));
-        temp->data = i;
-        temp->next = head;
+        node* temp = NULL;
+        temp = malloc(sizeof(node));
+        temp->data = 10;
+        temp->next = head; //connecting to the prev head
         head = temp;
-    }
+    };
 
-    return head;
+    node* temp = head;
+    while (temp != NULL){
+        printf("%d", temp->data);
+        printf("\n");
+        temp = temp->next;
+    };
+
 }
+
+
